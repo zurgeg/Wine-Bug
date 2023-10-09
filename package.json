@@ -82,7 +82,7 @@
   },
   "scripts": {
     "start": "elctron .",
-    "build": "electron-builder --windows nsis:ia32"
+    "build": "electron-builder -wl"
   },
   "author": "",
   "license": "ISC"

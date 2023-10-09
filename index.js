@@ -6,6 +6,8 @@ app.whenReady().then(() => {
       };
       sudo.exec('echo hello', options,
         function(error, stdout, stderr) {
+          console.log('stderr: ' + stderr);
+          console.log('error: ' + error)
           if (error) throw error;
           console.log('stdout: ' + stdout);
         }
